@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Block Game</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="Game.css">
+</head>
+<body>
+
+  <!-- Message box -->
+  <div class="message-box" id="messageBox">
+    <p><b><u>Instructions</u></b></p>
+    <p>1. Press Space Bar to Start</p>
+    <p>2. To fly, hold the "SpaceBar" for longer distances, and adjust to avoid obstacles by pressing it lightly or firmly.</p>
+    <p>********** Try to score 50 if u can!! **********</p>  
+</div>
+
+  <!-- Restart button -->
+  <button class="restart-button" id="restartButton">
+    <p><b>"OOPS"</b></p>
+    <p>To Play Again Refresh Page</p>
+  </button>
+
+  <div class="score">
+    <span class="score_title"></span>
+    <span class="score_val"></span>
+  </div>
+
+  <canvas width="1500" height="550" id="game"></canvas>
+  <script src="Game.js"></script>
+</body>
+</html>

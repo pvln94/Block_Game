@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    /* Set background color */
+    background-color: black;
+    /* Center the canvas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  canvas {
+    /* Set background image only for the canvas */
+    background-image: url('Images/City_Game.jpg');
+    /* Center and scale the background image to cover the canvas */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .score {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .score_val {
+    color: gold;
+    font-weight: bold;
+  }
+  
+  /* Message box style */
+  .message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    z-index: 11; /* Ensure message is on top of canvas */
+  }
+  
+  /* Restart button style */
+  .restart-button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    z-index: 12; /* Ensure restart button is on top of canvas and message */
+  }
+  
